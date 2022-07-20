@@ -9,6 +9,32 @@
 
 }
 
+h1,h2,h3,h4,p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul,ol{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+img{
+    display: block;
+}
+button{
+    display: block;
+    cursor: pointer;
+    margin: 0 auto;
+    border: none;
+}
+
+address{
+    font-style: normal;
+}
+    
+
 .list{
 list-style: none;
 }
@@ -23,7 +49,22 @@ body {
     color: #212121;
 }
 
+.container{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.section{
+    margin-top: 94px;
+    margin-bottom: 94px;
+}
+
 /*=============HEADER=============*/
+
+
 .logo{
 font-family: 'Raleway', sans-serif;
 text-decoration: none;
@@ -42,6 +83,37 @@ font-size: 26px;
 line-height: 1.19;
 letter-spacing: 0.03em;
 color:var(--logo-color);
+}
+
+.page-header{
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.header-container{
+    display: flex;
+    align-items: center;
+}
+
+.page-nav{
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    margin-right: 93px;
+}
+
+
+.menu-item:not(last-child){
+    margin-right:50px;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 50px;
 }
 
 .menu-link{
@@ -74,26 +146,31 @@ font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
-color:var(--coment-color);
+color:var(--coment-color);  
 }
 .menu-mail:hover,
 .menu-mail:focus{
 color: var(--fon-color);
 }
-
-
-
 /*===========/HEADER===========*/
 
 /*==========MAIN===========*/
-.main-title{
+
+    
+
+
+.main-title{ 
+max-width:696px;
 font-style: normal;
-font-weight: 900;
 font-size: 44px;
 line-height: 1.36;
 text-align: center;
 letter-spacing: 0.06em;
 text-transform: uppercase;
+margin: 0 auto;
+margin-bottom: 30px;
+
+
 
 color:var(--title-color)
 }
@@ -102,31 +179,41 @@ color:var(--title-color)
     color: var(--fon-color);
 }
 .hero{
+    padding: 200px 0;
     background-color: var(--hero-color);
+    
 }
 
 .modal-btn{
-    font-family: "Roboto", sans-serif;
+font-family: "Roboto", sans-serif;
 font-weight: 700;
 font-size: 16px;
 line-height: 1.88;
 cursor: pointer;
-display: flex;
-align-items: center;
-text-align: center;
 letter-spacing: 0.06em;
 color: #FFFFFF;
 background: #2196F3;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 border-radius: 4px;
-cursor: pointer;
+padding-top: 10px;
+padding-bottom: 10px;
+padding-left: 32px;
+padding-right: 32px;
+border: 1px solid transparent;
 }
 .modal-btn:hover,
 .modal-btn:focus{
-    background: #188ce8;
+background: #188ce8;
+}
+
+
+.description-page{
+    display: flex;
+    gap: 30px;
 }
 
 .title-description{
+margin-bottom: 10px;
 font-weight: 700;
 font-size: 14px;
 line-height: 1.14;
@@ -145,19 +232,40 @@ color:var(--coment-color)
 
 /*===========WORK-PAGE===========*/
 
+.work-container
+.conatiner{
+    display: block;
+}
+
 .title{
 font-weight: 700;
 font-size: 36px;
 line-height: 1.16;
 letter-spacing: 0.03em;
+margin-bottom: 50px;
+text-align: center;
+margin-bottom: 50px;
 color:var(--tekst-color)
 }
 
+.work{
+    display: flex;
+    gap: 30px;
+}
+
+.work-gallery{
+    display: inline;
+}
+
 .team{
+    display: flex;
+    gap: 30px;
+
     background-color: #f5f4fa;
 }
 .employees{
-font-weight: 500;
+    margin-bottom: 10px;
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
@@ -178,18 +286,39 @@ font-weight: 500;
     0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
+
+.name{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
 /*===========/WORK-PAGE===========*/
 
 /*===========FOOTER===========*/
 .footer-page{
+    padding-top: 60px;
+    padding-bottom: 60px;
     background:var(--hero-color);
 }
 
+.footer-container
+.container{
+    margin-bottom: 8px;
+    display: block;
+}
+
+.logo{
+    display: block
+    margin-bottom:20px;
+}
+
 .logo-color-f{
+    margin-bottom: 20px;
     color:var(--title-color);
 }
 
 .address-information{
+    margin-bottom: 9px;
     font-style: normal;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -197,6 +326,7 @@ font-weight: 500;
 }
 
 .contact-information{
+    margin-bottom: 9px;
     font-style: normal;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -254,3 +384,14 @@ background: #2196f3;
     background: #FFFFFF;
     border: 1px solid #EEEEEE;
 }
+
+
+
+
+
+
+
+
+
+
+
